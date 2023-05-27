@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+
+    >
+
+    <TextView
+        android:id="@+id/loginhmain"
+        android:text="Hi, Welcome Back!"
+        android:textColor="@color/black"
+        android:layout_marginTop="80dp"
+        android:textSize="22dp"
+        android:fontFamily="@font/intersemibold"
+        android:paddingStart="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/loginhsub"
+        android:text="Hello again, you've been missed!"
+        android:layout_marginTop="40dp"
+        android:textSize="14dp"
+        android:fontFamily="@font/intersemibold"
+        android:paddingStart="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/loginhmain"
+        />
+
+    <LinearLayout
+        android:id="@+id/loginemail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingStart="20dp"
+        android:orientation="vertical"
+        android:layout_marginTop="70dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/loginhsub"
+        >
+
+        <TextView
+            android:textColor="@color/black"
+            android:text="Email Address"
+            android:textSize="12dp"
+            android:fontFamily="@font/intermedium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+
+        <EditText
+            android:textSize="15dp"
+            android:layout_marginTop="4dp"
+            android:fontFamily="@font/interregular"
+            android:layout_width="375dp"
+            android:layout_height="50dp"
+            android:hint="Enter your Email"
+            android:paddingStart="20dp"
+            android:background="@drawable/edittextbackground"
+
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/loginpass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingStart="20dp"
+        android:orientation="vertical"
+        android:layout_marginTop="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/loginemail"
+        >
+
+        <TextView
+            android:textColor="@color/black"
+            android:text="Password"
+            android:textSize="12dp"
+            android:fontFamily="@font/intermedium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+
+        <EditText
+            android:textSize="15dp"
+            android:layout_marginTop="4dp"
+            android:fontFamily="@font/interregular"
+            android:layout_width="375dp"
+            android:layout_height="50dp"
+            android:hint="Enter your Password"
+            android:paddingStart="20dp"
+            android:background="@drawable/edittextbackground"
+
+            />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/loginforget"
+        android:textColor="@color/redwrong"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/intersemibold"
+        android:textSize="14dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Forgot Password"
+        app:layout_constraintTop_toBottomOf="@+id/loginpass"
+        app:layout_constraintEnd_toEndOf="@+id/loginpass"
+        />
+
+    <Button
+        android:textSize="16dp"
+        android:id="@+id/loginbtn"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/roundedbuttondarkver"
+        android:textColor="@color/white"
+        android:text="Login"
+        android:fontFamily="@font/intermedium"
+        android:textAllCaps="false"
+        android:layout_width="375dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/loginforget"
+        />
+
+    <LinearLayout
+        android:id="@+id/logindivider"
+        android:orientation="horizontal"
+        android:layout_marginTop="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/loginbtn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        >
+
+        <View
+            android:layout_width="120dp"
+            android:layout_height="2dp"
+            android:background="@color/blank"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            />
+
+        <TextView
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Or Login With"
+            android:fontFamily="@font/intermedium"
+            />
+
+        <View
+            android:layout_width="120dp"
+            android:layout_height="2dp"
+            android:background="@color/blank"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/butondesign"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/logindivider"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:src="@drawable/common_google_signin_btn_icon_light_normal"
+        >
+
+
+    </ImageView>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

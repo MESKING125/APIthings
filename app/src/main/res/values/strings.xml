@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">APIthings</string>
+    <string name="title_activity_main_page">maintitle</string>
+    <color name="background">#3ab78d</color>
+    <color name="dark_background">#02756f</color>
+    <color name="invtext">#7b7b7b</color>
+    <color name="redwrong">#ff4141</color>
+    <color name="blank">#cdd1e0</color>
+
+
+</resources>
