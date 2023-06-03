@@ -1,34 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".MainPageActivity">
+    android:layout_height="wrap_content"
+    tools:context=".MainActivity"
+    >
 
     <TextView
-        android:id="@+id/name"
+        android:textColor="@color/dark_background"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="name"
-        tools:layout_editor_absoluteX="138dp"
-        tools:layout_editor_absoluteY="92dp" />
+        android:fontFamily="@font/interbold"
+        android:layout_marginTop="5dp"
+        android:text="Hyper News"
+        android:textSize="25dp"
+        android:layout_gravity="center"/>
 
-    <TextView
-        android:id="@+id/email"
-        android:layout_width="wrap_content"
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/RecycleGoDown"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="email"
-        tools:layout_editor_absoluteX="127dp"
-        tools:layout_editor_absoluteY="356dp" />
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="sign out"
-        android:id="@+id/signOutBtn"
-        tools:layout_editor_absoluteX="161dp"
-        tools:layout_editor_absoluteY="118dp" />
-
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+        />
+</LinearLayout>
